@@ -2,7 +2,8 @@ import cors from 'cors';
 import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './utils/db.js'; 
-import contactFormRouter from './router/contactform.route.js'
+// import contactFormRouter from './router/contactform.route.js'
+import { ContactForm } from './model/contactform.model.js';
 
 dotenv.config({});
 const app =express();
