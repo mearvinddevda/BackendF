@@ -17,7 +17,7 @@ app.get("/",(req, res)=>{
     res.send("Server running 24*7");
 })
 
-
+connectDB();
 // app.use("/contactdetails",contactFormRouter);
 app.get("/contactdetails/getClients",async (req, res) => {
 	try {
@@ -43,6 +43,6 @@ app.get("/contactdetails/getClients",async (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT , ()=>{
-    connectDB();
+    
     console.log("Hello from server : " + PORT);
 })
