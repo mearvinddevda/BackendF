@@ -17,7 +17,7 @@ app.get("/",(req, res)=>{
 })
 
 
-app.use("/contactdetails",contactFormRouter);
+// app.use("/contactdetails",contactFormRouter);
 app.get("/contactdetails/getClients",async (req, res) => {
 	try {
 	  
