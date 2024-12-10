@@ -23,7 +23,6 @@ app.get("/contactdetails/getClients",async (req, res) => {
 	try {
 	  
 	//   const client = await ContactForm.find();.
-    const client = ContactForm.find();
 	  if (!client) {
 		return res.status(404).json({
 		  message: "Clients not Found",
