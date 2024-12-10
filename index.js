@@ -22,8 +22,8 @@ app.get("/",(req, res)=>{
 app.get("/contactdetails/getClients",async (req, res) => {
 	try {
 	  
-	//   const client = await ContactForm.find();.
-	  if (!false) {
+	  const client = await ContactForm.find({});
+	  if (!client) {
 		return res.status(404).json({
 		  message: "Clients not Found",
 		  success: false,
