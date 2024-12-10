@@ -3,7 +3,7 @@ import { getAllCients, GetContactDetails } from "../controller/contactform.contr
 import { singleUpload } from "../middleware/multer.js";
 
 const router = express.Router();
-
+console.log("HELLO ROUTE");
 // router.route("/update").put(updateClientDetails );
 router.route("/create").post(singleUpload,GetContactDetails);
 
